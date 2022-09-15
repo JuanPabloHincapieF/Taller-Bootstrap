@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Bootstrap</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="bg-light p-3 m-5 col-8 rounded-3 main-shadow">
+
+                <div class="container">
+                    <div class="row p-3">
+                        <!-- imagen -->
+                        <div class="col-md-12 col-sm-12 col-lg-5 col-xl-4 text-center mt-5">
+                            <img src="https://ps.w.org/login-customizer/assets/icon-256x256.png?rev=2455454"
+                                width="85%%" height="85%" class="img-login" alt="">
+                        </div>
+                        <!-- formulario -->
+                        <div class=" col-md-12  col-sm-12 col-lg-7 col-xl-8">
+                            <h1 class="h1 my-4 text-center">Login</h1>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">User</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingPassword"
+                                    placeholder="Password">
+                                <label for="floatingPassword">Password</label>
+                            </div>
+                            <div class="form-check justify-content-start
+                                my-3">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1"
+                                    onclick="showPassword()">
+                                <label class="form-check-label" for="exampleCheck1">Show password</label>
+                            </div>
+                            <div class="login10 mt-4">
+                                <input type="submit" value="LOGIN" class=" custom-button">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- show/hide password -->
+    <script>
+        function showPassword() {
+            let x = document.getElementById('floatingPassword');
+            if (x.type === 'password') {
+                x.type = 'text'
+            } else {
+                x.type = 'password'
+            }
+        }
+    </script>
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
